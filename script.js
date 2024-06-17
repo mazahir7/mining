@@ -47,33 +47,34 @@ const over = document.querySelector(".over");
 let contentCloseBtn = "";
 const cards = document.querySelector(".cards");
 
-cards.addEventListener("click", function (e) {
-  const target = e.target;
-  if (!target.classList.contains("card-info")) return;
+cards &&
+  cards.addEventListener("click", function (e) {
+    const target = e.target;
+    if (!target.classList.contains("card-info")) return;
 
-  const productCode = target.getAttribute("data-product-code");
+    const productCode = target.getAttribute("data-product-code");
 
-  const productApp = productInfo[productCode].application
-    .split(";")
-    .map((el) => `<li>${el}</li>`)
-    .join("");
+    const productApp = productInfo[productCode].application
+      .split(";")
+      .map((el) => `<li>${el}</li>`)
+      .join("");
 
-  const productHTML = `<ion-icon class="close-content" name="close-outline"></ion-icon>
+    const productHTML = `<ion-icon class="close-content" name="close-outline"></ion-icon>
           <p>${productInfo[productCode].info}</p>
           <h6>Applications</h6>
           <ul>${productApp}</ul>`;
 
-  contentContainer.innerHTML = productHTML;
+    contentContainer.innerHTML = productHTML;
 
-  toggleOverview();
-  toggleContent();
-
-  contentCloseBtn = document.querySelector(".close-content");
-  contentCloseBtn.addEventListener("click", () => {
     toggleOverview();
     toggleContent();
+
+    contentCloseBtn = document.querySelector(".close-content");
+    contentCloseBtn.addEventListener("click", () => {
+      toggleOverview();
+      toggleContent();
+    });
   });
-});
 
 mobileNav.addEventListener("click", function (e) {
   const target = e.target;
