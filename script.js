@@ -47,6 +47,15 @@ const over = document.querySelector(".over");
 let contentCloseBtn = "";
 const cards = document.querySelector(".cards");
 
+const form = document.querySelector(".form");
+
+form &&
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    form.reset();
+  });
+
 cards &&
   cards.addEventListener("click", function (e) {
     const target = e.target;

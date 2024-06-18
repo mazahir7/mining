@@ -503,8 +503,29 @@ h6 {
 .form textarea {
   font-size: 1.6rem;
   padding: 0.6rem 1rem;
-  border-radius: 5px;
   border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.form .btn {
+  border: 2px solid #000;
+  background-color: #ffd700;
+  color: #000;
+  font-size: 2.6rem;
+  padding: 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 2rem 0;
+  transition: all 0.2s ease;
+}
+
+.form .btn:hover {
+  filter: brightness(120%) contrast(130%);
+}
+.form .btn:active {
+  transform: scale(0.98);
 }
 
 footer.container {
