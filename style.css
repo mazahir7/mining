@@ -29,8 +29,8 @@ body {
   overflow-x: hidden;
   position: relative;
   /* background: url(assets/video-1.mp4); */
-  background-color: #36454f;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 
 body::-webkit-scrollbar {
@@ -38,11 +38,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #2c363f;
+  background: #000;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #000;
+  background: #fff;
 }
 
 body::-webkit-scrollbar-thumb:hover {
@@ -61,7 +61,7 @@ li {
 }
 
 .container {
-  max-width: 1350px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -71,7 +71,8 @@ li {
   position: relative;
 }
 
-#background-video {
+#background-video,
+.head-img-cover {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -111,7 +112,7 @@ li {
   position: fixed;
   top: 0;
   margin: 0 auto;
-  max-width: 1350px;
+  max-width: 1500px;
   width: 100vw;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.8);
@@ -150,7 +151,8 @@ li {
   color: #000;
 }
 
-.nav-a .dropdown {
+.nav-a .dropdown,
+.dropper-dd {
   position: absolute;
   top: 0;
   left: 0%;
@@ -175,23 +177,31 @@ li {
 }
 
 .nav-a .dropdown,
+.nav-item .dropper-dd,
 .nav-a .dropdown.drop-grid {
   display: none;
 }
 
-.nav-a:hover .dropdown {
+.position-relative {
+  position: relative;
+}
+
+.nav-a:hover .dropdown,
+.nav-item:hover .dropper-dd {
   display: flex;
 }
 .nav-a:hover .dropdown.drop-grid {
   display: grid;
 }
 
-.nav-a .dropdown .drop-item {
+.nav-a .dropdown .drop-item,
+.nav-item .dropper-dd li a {
   width: max-content;
 
   border-bottom: 2px solid transparent;
 }
-.nav-a .dropdown .drop-item:hover {
+.nav-a .dropdown .drop-item:hover,
+.nav-item .dropper-dd li a:hover {
   border-color: #fff;
   transform: scale(1.07);
 }
@@ -288,6 +298,7 @@ li {
   right: 0;
   top: 0;
   margin: 1rem;
+  cursor: pointer;
 }
 
 main {
@@ -322,7 +333,7 @@ main .main-img {
   width: 50rem;
   aspect-ratio: 16/9;
   border-radius: 06px;
-  box-shadow: 0 0 7px #fff;
+  box-shadow: 0 0 7px #000;
   object-fit: cover;
   object-position: center center;
   filter: brightness(110%) contrast(110%);
@@ -376,7 +387,7 @@ main .main-img {
   justify-content: center;
   padding: 5rem 2rem;
   gap: 2rem;
-  background-color: #4682b4;
+  box-shadow: 0 0 8px #000;
   background-color: rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
   filter: brightness(103%) contrast(120%);
@@ -595,6 +606,10 @@ footer img {
 
   .contact-us {
     grid-template-columns: 1fr;
+  }
+
+  section.reverse-flex {
+    flex-direction: column-reverse !important;
   }
 }
 
