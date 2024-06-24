@@ -368,6 +368,7 @@ main .main-img {
 .card h5 {
   font-size: 3rem;
   letter-spacing: 2px;
+  /* color: #fff; */
 }
 
 .card p {
