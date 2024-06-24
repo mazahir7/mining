@@ -33,38 +33,12 @@
     <script defer src="script.js"></script>
 
     <style>
-      .container {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.7;
+      h5 {
+        font-size: 2.8rem;
       }
-
-      .main-content {
-        font-size: 1.8rem;
-        padding-top: 3rem;
-      }
-
-      footer.container {
-        margin-top: 9rem;
-      }
-
-      .main-content h5 {
-        font-size: 3rem;
-        letter-spacing: 2px;
-        padding: 1.8rem 0;
-      }
-      .main-content p {
-        text-align: justify;
-      }
-
-      @media (max-width: 500px) {
-        .container .main-content {
-          font-size: 1.4rem;
-        }
-
-        .main-content h5 {
+      @media (max-width: 448px) {
+        h5 {
           font-size: 2.4rem;
-          padding-bottom: 1rem;
         }
       }
     </style>
@@ -150,76 +124,58 @@
       <div style="width: max-content" class="headline">
         <span></span>
 
-        <span style="letter-spacing: 2px">ABOUT US</span>
+        <span style="letter-spacing: 2px; text-transform: uppercase">Calcite</span>
       </div>
     </header>
+
     <main class="container">
-      <!-- <h3>About Us</h3> -->
-      <div class="main-content">
-        <p>
-          Welcome to Rajlaxmi Minchem, a leader in the mineral industry with over 25 years of experience. Established in
-          1984 and ISO 9001: 2008 certified, we have grown from humble beginnings as a trading company to owning
-          extensive mining and processing facilities in Udaipur, Rajasthan.
-        </p>
-        <h5>Our Journey</h5>
-        <p>
-          Starting with just trading, we have evolved into a fully integrated company with our own mines and processing
-          plants. Located in Mavli, Udaipur, our mining operations cover up to 100 hectares, and our grinding units
-          boast a capacity of over 10,000 metric tons per month. This expansion has been driven by our commitment to
-          integrity and continuous innovation.
-        </p>
-        <h5>Our Products</h5>
-        <p>
-          Rajlaxmi Minchem offers a well-diversified portfolio of products including talc, dolomite, calcite, silica,
-          barites, and clay. These minerals have various applications across multiple industries, thanks to our ability
-          to manufacture them to precise customer specifications. We produce minerals ranging from 5 microns to 100
-          microns, meeting exact physical properties such as brightness, whiteness (CIE, ISO), color values (l, a, b),
-          shade, residue on sieves, particle size analysis, bulk density, flow point, oil absorption, refractive index,
-          moisture content, loss on ignition, viscosity, abrasion, opacity, reducing strength, and chemical properties
-          like CaCO3 content, MgCO3 content, Al2O3 content, Fe2O3 content, heavy metals, conductivity, pH value, and
-          other parameters specified by our esteemed customers.
-        </p>
-        <h5>Commitment to Quality and Sustainability</h5>
-        <p>
-          We pride ourselves on our state-of-the-art processing techniques and environmentally friendly mining
-          practices. Our quality management system ensures that every product we deliver meets the highest standards,
-          and our commitment to sustainability ensures that our operations have minimal environmental impact.
-        </p>
-        <h5>Leadership and Values</h5>
-        <p>
-          Our values are reflected in our leadership and professional teams. We believe in integrity, innovation, and
-          customer satisfaction, which have been the cornerstones of our growth. Our strong track record of customer
-          satisfaction speaks volumes about our reliability and commitment to providing high-quality talc products at
-          competitive prices.
-        </p>
-        <h5>Vision and Mission</h5>
-        <p>
-          <b>Vision:</b> To be a global leader in the mineral industry, recognized for our quality, sustainability, and
-          innovation. <br />
-          <br />
-          <b>Mission:</b> To continuously innovate and improve our processes, ensuring the highest quality products and
-          services that exceed our customers' expectations, while fostering a sustainable and ethical business
-          environment.
-        </p>
-        <h5>Leading the Market</h5>
-        <p>
-          As the leading producer and exporter of talc from Udaipur, Rajasthan, we supply our products to both domestic
-          and international markets. Our reputation as a reliable supplier is built on our consistent quality and
-          customer-centric approach.
-        </p>
-        <h5><b>The Minerals of Udaipur</b></h5>
-        <p>
-          Udaipur is renowned for its rich mineral resources. The region's geology provides an abundant supply of
-          high-quality talc, dolomite, calcite, silica, barites, and clay, which are integral to various industrial
-          applications. Our mines tap into these resources, ensuring that we can deliver top-quality minerals to our
-          clients worldwide.
-        </p>
-        <p>
-          At Rajlaxmi Minchem, we are proud of our heritage, our growth, and our commitment to excellence. Join us as we
-          continue to lead the way in the mineral industry, setting new standards for quality and sustainability.
-        </p>
-        <br />
-        <p>Thank you for choosing Rajlaxmi Minchem.</p>
+      <section id="GrindingAndPacking" class="about">
+        <div class="text-content">
+          <p>
+            At Rajlaxmi Minchem, we supply high-grade calcite, a calcium carbonate mineral with diverse industrial
+            applications. Calcite is widely used in the construction, plastics, paints, rubber, paper, and ceramics
+            industries. Our calcite is prized for its high purity, consistent particle size, and exceptional brightness.
+
+            <br />
+            <br />
+            Rajlaxmi Minchem is dedicated to delivering top-quality calcite that meets the unique requirements of our
+            customers. Choose us for dependable and superior calcite products designed to optimize your industrial
+            processes.
+          </p>
+        </div>
+        <img class="main-img" src="assets/image-1.jpg" alt="about-us" />
+      </section>
+      <h3>Applications</h3>
+      <div class="slider">
+        <a class="slide" href="applications.html#refractory"
+          ><img src="assets/icon/construction.png" alt="cosmetics" />
+          <h6>Construction materials</h6></a
+        >
+
+        <a class="slide" href="applications.html#plastic"
+          ><img src="assets/icon/plastic.png" alt="cosmetics" />
+          <h6>Plastics manufacturing</h6></a
+        >
+
+        <a class="slide" href="applications.html#paint"
+          ><img src="assets/icon/paint.png" alt="cosmetics" />
+          <h6>Paints and coatings</h6></a
+        >
+
+        <a class="slide" href="applications.html#rubber"
+          ><img src="assets/icon/rubber.png" alt="cosmetics" />
+          <h6>Rubber products</h6></a
+        >
+
+        <a class="slide" href="applications.html#ink"
+          ><img src="assets/icon/paper.png" alt="cosmetics" />
+          <h6>Paper production</h6></a
+        >
+
+        <a class="slide" href="applications.html#ceramics"
+          ><img src="assets/icon/ceramic.png" alt="cosmetics" />
+          <h6>Ceramics industry</h6></a
+        >
       </div>
     </main>
     <div class="over"></div>

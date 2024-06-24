@@ -13,6 +13,13 @@ const proDropped2 = document.getElementById("pro-droped-2");
 const proDropped3 = document.getElementById("pro-droped-3");
 const proDropped4 = document.getElementById("pro-droped-4");
 
+const logo = document.querySelector(".logo");
+
+logo &&
+  logo.addEventListener("click", () => {
+    window.location = "index.html";
+  });
+
 proDropped &&
   proDropped.addEventListener("click", () => {
     proDropped2.classList.toggle("active");
