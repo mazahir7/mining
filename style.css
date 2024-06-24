@@ -224,7 +224,8 @@ li {
   left: 0;
   /* right: 0; */
   bottom: 0;
-  background-color: #2c363f;
+  background-color: #fff;
+
   overflow-y: scroll;
   padding: 5rem 0;
   display: flex;
@@ -258,7 +259,7 @@ li {
   width: 215px;
   font-size: 3rem;
   text-align: center;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #000;
   padding-bottom: 1rem;
 }
 
@@ -277,18 +278,22 @@ li {
   transform: translateY(4px);
 }
 
+.navigation .mobile-nav .nav-a {
+  color: #000;
+}
+
 .navigation .mobile-nav .nav-a:hover {
   background-color: transparent;
-  color: #fff;
+  color: #000;
 }
 
 .mobile-nav .drop .item {
   border-bottom: 2px solid transparent;
-
+  color: #000;
   font-size: 1.8rem;
 }
 .mobile-nav .drop .item:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #000;
   transform: scale(1.07);
 }
 
